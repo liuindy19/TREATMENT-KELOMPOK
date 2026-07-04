@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajukan Layanan — SILA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="container navbar-inner">
+            <a href="index.html" class="logo">🍭 COQSCH</a>
+            <input type="checkbox" id="navToggle" class="nav-toggle">
+            <label for="navToggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="layanan.html" class="active">Service</a></li>
+                    <li><a href="riwayat.html">History</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <h1>Academic Service Form</h1>
+                <p class="section-desc">Complete the form below to submit your academic service request.</p>
+
+                <form id="formPengajuan" class="form-card">
+                    <fieldset>
+                        <legend><br><br>Application Data</legend>
+                        <p id="formError" class="form-error"></p>
+
+                        <div class="form-group">
+                            <label for="nama">Full Name</label>
+                            <input type="text" id="nama" name="nama" placeholder="Enter your full name">
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="nim">NIM</label>
+                                <input type="text" id="nim" name="nim" placeholder="Example: 12345678" maxlength="8">
+                            </div>
+                            <div class="form-group">
+                                <label for="prodi">Program Study</label>
+                                <select id="prodi" name="prodi">
+                                    <option value="">— Select Program Study —</option>
+                                    <option value="Psychology">Psychology</option>
+                                    <option value="Pharmacy">Pharmacy</option>
+                                    <option value="Law">Law</option>
+                                    <option value="Film">Film</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="layanan">Select Service</label>
+                                <select id="layanan" name="layanan">
+                                    <option value="">— Select Service —</option>
+                                    <option value="CAE">CAE — Certificate of Active Enrollment</option>
+                                    <option value="CNS">CNS — Create A New Student Card </option>
+                                    <option value="TNM">TOR — Transcript of Records</option>
+                                    <option value="PDA">CM — Change Major</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="tanggal">Application Date</label>
+                                <input type="date" id="tanggal" name="tanggal">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="keterangan">Description (optional)</label>
+                            <textarea id="keterangan" name="keterangan" rows="3"
+                                placeholder="Explain about your application..."></textarea>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary">🦩Submit Now</button>
+                            <button type="reset" class="btn btn-outline">↺ Reset</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div>
+                <strong>🍭 COQSCH</strong>
+                <p>Digital platform for academic service applications.</p>
+            </div>
+            <div class="footer-nav">
+                <h4>Navigate</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="layanan.html">Service</a></li>
+                    <li><a href="riwayat.html">History</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy;&copy; 2026 COQSCH — Created for Web Programming Treatment<</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
