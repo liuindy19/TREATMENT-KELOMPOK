@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🍭 COQSCH History</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="container navbar-inner">
+            <a href="index.html" class="logo">🍭 COQSCH</a>
+            <input type="checkbox" id="navToggle" class="nav-toggle">
+            <label for="navToggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="layanan.html">Service</a></li>
+                    <li><a href="riwayat.html" class="active">History</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <h1>History</h1>
+                <p class="section-desc">List of all academic service applications you have submitted.</p>
+
+                <div class="toolbar">
+                    <span id="dataCount">0 applications</span>
+                    <button id="btnHapusSemua" class="btn btn-outline" style="display: none;">🗑 Delete All</button>
+                </div>
+
+                <div class="table-responsive">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>Name</th>
+                                <th>Student ID</th>
+                                <th>Service</th>
+                                <th>Date</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tableBody">
+                            <!-- Data diisi oleh JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+
+                <div id="emptyState" class="empty-state" style="display: none;">
+                    <p>🗂️ No applications found.</p>
+                    <a href="layanan.html" class="btn btn-primary">➕ Apply for Service</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div>
+                <strong>🍭 COQSCH</strong>
+                <p>Digital platform for academic service applications.</p>
+            </div>
+            <div class="footer-nav">
+                <h4>Navigate</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="layanan.html">Service</a></li>
+                    <li><a href="riwayat.html">History</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 COQSCH — Created for Web Programming Treatment</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
